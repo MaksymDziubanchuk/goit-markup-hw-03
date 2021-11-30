@@ -70,6 +70,13 @@ body {
   margin: 0;
 }
 
+.hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 /* Геометрия */
 .container {
   width: 1200px;
@@ -365,7 +372,7 @@ body {
 .pf-card > .card-link {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
-  border-top-color: transparent;
+  border-top-width: 0;
 }
 
 .pf-card .pf-card-title {
